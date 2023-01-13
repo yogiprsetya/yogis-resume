@@ -4,16 +4,16 @@ module.exports = {
   theme: {
     fontFamily: {
       body: ['"Open Sans"', 'sans-serif'],
-      head: ['Merriweather', 'sans-serif'],
+      head: ['Merriweather', 'sans-serif']
     },
     extend: {
       colors: {
         cultured: '#d1d1d1',
         white: '#ffffff',
-        blue: '#2079c7',
-      },
-    },
+        blue: '#2079c7'
+      }
+    }
   },
   plugins: [],
-  content: ['./src/**/*.{ts,tsx}'],
+  content: ['./src/**/*.{ts,tsx}']
 };
