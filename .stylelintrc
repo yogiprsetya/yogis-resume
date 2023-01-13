@@ -1,8 +1,19 @@
 {
   "extends": [
-    "stylelint-config-standard"
+    "stylelint-config-recommended",
+    "stylelint-prettier/recommended",
+    "stylelint-config-rational-order",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier"
   ],
   "plugins": [
-    "stylelint-order"
-  ]
+    "stylelint-order",
+    "stylelint-scss",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-no-unsupported-browser-features",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": true
+  }
 }
