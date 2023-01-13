@@ -1,7 +1,4 @@
 .content {
-  width: 100%;
-  max-width: calc(60% - 16px);
-
   &__header {
     margin-bottom: 32px;
 
@@ -31,31 +28,67 @@
 
     &__standing {
       display: flex;
-      margin-bottom: 8px;
       gap: 4px;
+      margin-bottom: 8px;
       font-size: 11pt;
-      line-height: 1;
       font-family: theme('fontFamily.head');
+      line-height: 1;
     }
 
     &__time {
+      margin-bottom: 8px;
       color: theme('colors.granite');
       font-size: 10pt;
       line-height: 1;
-      margin-bottom: 8px;
     }
 
     &__desc {
-      font-family: theme('fontFamily.head');
-      color: theme('colors.granite');
       display: flex;
       flex-direction: column;
       gap: 8px;
+      color: theme('colors.granite');
+      font-family: theme('fontFamily.head');
 
-      p {
+      > * {
         font-size: 10pt;
-        line-height: 1.6;
+        line-height: 1.7;
       }
     }
   }
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  &__socmed {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    a > svg {
+      fill: #ce2d4f;
+    }
+  }
+}
+
+.main,
+.aside {
+  width: 100%;
+}
+
+.main {
+  max-width: calc(65% - 16px);
+}
+
+.aside {
+  max-width: calc(35% - 16px);
 }
