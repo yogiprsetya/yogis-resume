@@ -8,10 +8,18 @@
       font-size: 36pt;
       font-family: theme('fontFamily.head');
       line-height: 1;
+
+      @screen xs {
+        font-size: 28pt;
+      }
     }
 
     &__bio {
       font-size: 10pt;
+    }
+
+    @screen xs {
+      margin-bottom: 24px;
     }
   }
 
@@ -28,6 +36,7 @@
 
     &__standing {
       display: flex;
+      flex-direction: column;
       gap: 4px;
       margin-bottom: 8px;
       font-size: 11pt;
@@ -67,6 +76,11 @@
     flex-direction: column;
     font-weight: 700;
     font-size: 11pt;
+
+    @screen xs {
+      font-size: 10pt;
+      text-align: right;
+    }
   }
 
   &__socmed {
@@ -75,8 +89,26 @@
     gap: 8px;
 
     a > svg {
+      width: 32px;
+      height: 32px;
       fill: #ce2d4f;
+
+      @screen xs {
+        width: 36px;
+        height: 36px;
+      }
     }
+
+    @screen xs {
+      gap: 4px;
+    }
+  }
+
+  @screen xs {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -87,8 +119,16 @@
 
 .main {
   max-width: calc(65% - 16px);
+
+  @screen xs {
+    max-width: 100%;
+  }
 }
 
 .aside {
   max-width: calc(35% - 16px);
+
+  @screen xs {
+    max-width: 100%;
+  }
 }

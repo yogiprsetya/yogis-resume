@@ -19,12 +19,13 @@ function Main() {
           </p>
         </header>
 
+        <Social className="md:!hidden" />
         <Experience />
         <Education />
       </section>
 
       <aside className={cn(style.content, style.aside)}>
-        <Social />
+        <Social className="xs:!hidden" />
         <Skills />
         <Courses />
         <Stack />

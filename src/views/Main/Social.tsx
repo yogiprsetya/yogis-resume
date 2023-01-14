@@ -33,7 +33,7 @@ function Social({ className }: Props) {
       <div className={style.personal__socmed}>
         {CONTENT.map((v, i) => (
           <Link key={i} href={v.link} target="_blank">
-            <svg height={32} width={32}>
+            <svg>
               <use xlinkHref={v.icon} />
             </svg>
           </Link>

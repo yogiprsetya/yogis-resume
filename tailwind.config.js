@@ -12,6 +12,9 @@ module.exports = {
         granite: '#666666',
         white: '#ffffff',
         blue: '#2079c7'
+      },
+      screens: {
+        xs: { max: '767.99px' }
       }
     }
   },
