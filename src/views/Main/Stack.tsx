@@ -15,11 +15,11 @@ const CONTENT = [
     level: 'intermediate'
   },
   {
-    tech: 'Eslint',
+    tech: 'Linting tool',
     level: 'advance'
   },
   {
-    tech: 'Stylelint',
+    tech: 'Testing Library',
     level: 'advance'
   },
   {
